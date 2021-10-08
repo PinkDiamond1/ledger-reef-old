@@ -19,7 +19,7 @@
 extern "C" {
 #endif
 
-#define COIN_ADDR_TYPE_POLKADOT         0
+#define COIN_ADDR_TYPE_POLKADOT         42
 #define COIN_ADDR_TYPE_KUSAMA           2
 #define COIN_ADDR_TYPE_EDGEWARE         7
 #define COIN_ADDR_TYPE_KULUPU           16

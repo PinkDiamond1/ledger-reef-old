@@ -22,6 +22,7 @@ extern "C" {
 #define CLA                             0x90
 
 #define HDPATH_LEN_DEFAULT   5
+// TODO
 #define HDPATH_0_DEFAULT     (0x80000000 | 0x2c)
 #define HDPATH_1_DEFAULT     (0x80000000 | 0x162)       // 354 - Polkadot
 #define HDPATH_1_RECOVERY    (0x80000000 | 0x1b2)       // 434 - Kusama
@@ -48,13 +49,14 @@ typedef enum {
 #define SUPPORTED_TX_VERSION_CURRENT        LEDGER_MAJOR_VERSION
 #define SUPPORTED_TX_VERSION_PREVIOUS       (LEDGER_MAJOR_VERSION - 1)
 #define SUPPORTED_SPEC_VERSION              LEDGER_MINOR_VERSION
-#define SUPPORTED_MINIMUM_SPEC_VERSION      23
+#define SUPPORTED_MINIMUM_SPEC_VERSION      5
 
-#define COIN_AMOUNT_DECIMAL_PLACES          10
+#define COIN_AMOUNT_DECIMAL_PLACES          18
 
+// TODO
 #define COIN_GENESIS_HASH                   "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3"
-#define COIN_NAME                           "Polkadot"
-#define COIN_TICKER                         "DOT"
+#define COIN_NAME                           "Reef"
+#define COIN_TICKER                         "REEF"
 
 #define COIN_SECRET_REQUIRED_CLICKS         10
 
