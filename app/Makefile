@@ -62,14 +62,14 @@ $(info ************ FULL PARSER ENABLED ************)
 endif
 
 ifndef COIN
-COIN=DOT
+COIN=REEF
 endif
 
 include $(CURDIR)/Makefile.version
 
 $(info COIN  = [$(COIN)])
 
-ifeq ($(COIN),DOT)
+ifeq ($(COIN),REEF)
 # Main app configuration
 DEFINES += APP_STANDARD
 ifeq ($(TARGET_NAME),TARGET_NANOX)
@@ -78,7 +78,7 @@ endif
 APPNAME = "Reef"
 APPPATH = "44'/354'"  --path "44'/434'"
 
-else ifeq ($(COIN),DOT_XL)
+else ifeq ($(COIN),REEF_XL)
 # XL app configuration
 DEFINES += APP_STANDARD SUBSTRATE_PARSER_FULL
 APPNAME = "Reef XL"
@@ -241,7 +241,7 @@ dep/%.d: %.c Makefile
 .PHONY: listvariants
 listvariants:
 ifeq ($(TARGET_NAME),TARGET_NANOS)
-	@echo VARIANTS COIN DOT DOT_XL
+	@echo VARIANTS COIN REEF REEF_XL
 else ifeq ($(TARGET_NAME),TARGET_NANOX)
-	@echo VARIANTS COIN DOT
+	@echo VARIANTS COIN REEF
 endif

@@ -45,7 +45,7 @@ typedef enum {
 } key_kind_e;
 
 // Coin Specific
-#define PK_ADDRESS_TYPE                     COIN_ADDR_TYPE_POLKADOT
+#define PK_ADDRESS_TYPE                     COIN_ADDR_TYPE_REEF
 #define SUPPORTED_TX_VERSION_CURRENT        LEDGER_MAJOR_VERSION
 #define SUPPORTED_TX_VERSION_PREVIOUS       (LEDGER_MAJOR_VERSION - 1)
 #define SUPPORTED_SPEC_VERSION              LEDGER_MINOR_VERSION
